@@ -8,21 +8,13 @@ Below I give you the data of the technical test that I would like you to carry o
 Feactures & Requirements
 
   Problem to solve: https://codeforces.com/problemset/problem/1374/A;
-
   Deploy it on AWS;
-
   Build a Frontend;
-
   Perform a complete Readme;
-
   Integrating it with Sonar is optional but it adds up;
-
   Perform unit tests;
-
   Comment the code;
-
   Carry out validations of the parameters in the services;
-  
   Implement an error control system.
 ## Authors
 
