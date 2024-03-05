@@ -7,23 +7,23 @@ The technical test involves developing a small functionality in SpringBoot (Java
 
 Features, Scope & Requirements
 
-  Problem to solve: https://codeforces.com/problemset/problem/1374/A;
+   -Problem to solve: https://codeforces.com/problemset/problem/1374/A;
   
-  Deploy it on AWS;
+   -Deploy it on AWS;
   
-  Build a Frontend;
+   -Build a Frontend;
   
-  Perform a complete Readme;
+   -Perform a complete Readme;
   
-  Integrating it with Sonar is optional but it adds up;
+   -Integrating it with Sonar is optional but it adds up;
   
-  Perform unit tests;
+   -Perform unit tests;
   
-  Comment the code;
+   -Comment the code;
   
-  Carry out validations of the parameters in the services;
+   -Carry out validations of the parameters in the services;
   
-  Implement an error control system.
+   -Implement an error control system.
   
 ## Authors
 
