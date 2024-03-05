@@ -24,6 +24,14 @@ Features, Scope & Requirements
    -Carry out validations of the parameters in the services;
   
    -Implement an error control system.
+
+## Solution
+
+The final solution is an architecture MVVM with a REST service API and a frontend client to interchange data. 
+We don't need to scale;
+We don't have special security requirements:
+We don't have persistence. 
+We don't have special consumers or different behaviors by device.
   
 ## Authors
 
