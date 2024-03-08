@@ -1,0 +1,75 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Deploy a Java 11 application on an EC2 instance and expose port 22/80/8081 to the internet
+
+Resources:
+  MyIAMInstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Path: /
+      Roles:
+        - !Ref MyIAMRole
+
+  MyIAMRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: SSMManagedInstancePolicy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - ssm:*
+                  - ssm:StartSession
+                  - ssm:TerminateSession
+                Resource: '*'
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      AvailabilityZone: us-east-2a    
+      InstanceType: t2.micro
+      IamInstanceProfile: !Ref MyIAMInstanceProfile
+      ImageId: ami-022661f8a4a1b91cf  # Specify the appropriate AMI ID for you in AWS Console
+      KeyName: TemplateServerSSH      # Specify the appropriate SSH key name for you in AWS Console
+      SecurityGroups:
+        - Ref: MySecurityGroup
+      UserData:
+        Fn::Base64: |
+          #!/bin/bash
+          sudo yum install java-11-amazon-corretto -y
+
+
+  MySecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: SSH on Port 22 and Web on Port 80/8081
+      SecurityGroupIngress:
+      - CidrIp: 0.0.0.0/0
+        FromPort: 22
+        IpProtocol: tcp
+        ToPort: 22
+      - CidrIp: 0.0.0.0/0
+        FromPort: 8081
+        IpProtocol: tcp
+        ToPort: 8081
+      - CidrIp: 0.0.0.0/0
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+
+
+Outputs:
+  WebsiteURL:
+    Description: URL of the deployed Java 11 application
+    Value: !Sub "http://${MyEC2Instance.PublicDnsName}:80"
+
+  SessionManagerURL:
+    Description: URL for Session Manager access
+    Value: !Sub "https://console.aws.amazon.com/systems-manager/session-manager/${AWS::Region}/sessions/${MyEC2Instance}"

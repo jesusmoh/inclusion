@@ -1,6 +1,8 @@
 
 package core.controller.rest;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -23,11 +25,14 @@ import core.service.IMathService;
 @CrossOrigin(origins = "*", methods = { RequestMethod.POST, RequestMethod.OPTIONS })
 public class MathController {
 
+  Logger logger = LoggerFactory.getLogger(MathController.class);
+
   @Autowired
   private IMathService mathService;
 
   @PostMapping(value = "/findk")
   public ResponseDTO findTheMaximumIntegerK(@RequestBody RequestKDTO dto) {
+    logger.info("Arriving numbers...");
     var kdto = mathService.findTheMaximumIntegerK(dto);
     return new ResponseDTO(kdto, null, HttpStatus.OK);
   }

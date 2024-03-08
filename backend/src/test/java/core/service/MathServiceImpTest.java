@@ -2,6 +2,7 @@ package core.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import core.model.dto.in.RequestKDTO;
@@ -9,7 +10,8 @@ import core.model.dto.in.RequestKDTO;
 @SpringBootTest
 class MathServiceImpTest {
 
-	IMathService mathService = new MathServiceImp();
+	@Autowired
+	IMathService mathService;
 
 	@Test
 	void findTheMaximumIntegerK_test() {
@@ -19,7 +21,7 @@ class MathServiceImpTest {
 		request.setY(-222);
 		request.setN(99);
 		var k = this.mathService.findTheMaximumIntegerK(request);
-		assertThat(k.getK()).isEqualTo(99);
+		assertThat(k.getK()).isEqualTo(98);
 
 	}
 

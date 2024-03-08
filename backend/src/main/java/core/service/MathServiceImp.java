@@ -1,6 +1,8 @@
 
 package core.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -18,6 +20,8 @@ import core.service.validator.IRequestKDTOValidatorService;
 @Service
 public class MathServiceImp implements IMathService {
 
+    Logger logger = LoggerFactory.getLogger(MathServiceImp.class);
+
     @Autowired
     @Qualifier("requestKDTOValidatorServiceImp")
     private IRequestKDTOValidatorService requestKDTOValidatorServiceImp;
@@ -25,17 +29,21 @@ public class MathServiceImp implements IMathService {
     @Override
     public ResultKDTO findTheMaximumIntegerK(RequestKDTO dto) {
 
+        logger.info("Validating numbers...");
         var rv = requestKDTOValidatorServiceImp.validate(dto);
         if (rv.isValid()) {
             final int x = dto.getX();
             final int y = dto.getY();
             final int n = dto.getN();
 
+            logger.info("Doing math...");
             final int k = (n - y) / x * x + y;
-            System.out.println("For test case " + x + " " + n + " " + y + ": Maximum k = " + k);
+            logger.info("For test case [" + x + " " + n + " " + y + "]: Maximum k = " + k);
             return new ResultKDTO(k);
         } else {
+            logger.error("An ERROR Message");
             throw new AppException(rv.getResult(), true);
+
         }
 
     }
