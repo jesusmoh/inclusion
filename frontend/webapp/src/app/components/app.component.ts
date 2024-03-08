@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { MyService } from '../services/my-service.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -20,24 +21,14 @@ export class AppComponent implements OnInit {
   numbers = { x: '', y: '', n: '' };
   badresultk = "";
 
-  constructor(private myService: MyService, private http: HttpClient) { }
+  constructor(private myService: MyService, private http: HttpClient, private router: Router) { }
 
 
   ngOnInit() {
-    this.getIpAddress();
-  }
 
-  getIpAddress() {
-    this.http.get<{ ip: string }>('https://api.ipify.org?format=json')
-      .subscribe(data => {
-        console.log('IP Address: ', data.ip);
-        this.ip = data.ip;
-        // You can now use the IP address as needed
-      }, error => {
-        console.error('Failed to get IP address:', error);
-      });
+    console.log(window.location.host);
+    this.ip = window.location.host;
   }
-
 
   public sendPostRequest() {
     this.badresultk = "";

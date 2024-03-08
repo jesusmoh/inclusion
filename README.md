@@ -37,31 +37,31 @@ FOLDERS PROJECT
 
 ## Deployment
 
-1 CREATE INFRASTRUCTURE IN AWS. Please edits the java11_app_ec2.yaml with your account details for AWS.
+1 CREATE INFRASTRUCTURE IN AWS. Please edit the java11_app_ec2.yaml with your account details for AWS.
 ```
 aws cloudformation create-stack --stack-name inclusionStack --template-body file://java11_app_ec2.yaml  --capabilities CAPABILITY_IAM
 ```
-2 COPY SOURCES. from folder pasaje to /home/ec2-user/ (Feel free to use putty,mobaX or others to copy from your pc to aws server) 
+2 COPY SOURCES. from folder pasaje to /home/ec2-user/ (Feel free to use putty,mobaX or others to copy from your pc to aws server). Update all aws dns directions with yours data. 
 ```
 scp -i "TemplateServerSSH.pem" /home/jortiz/myTemp/pasaje/mathbackendservice-0.0.1-SNAPSHOT.jar ec2-user@ec2-18-191-21-69.us-east-2.compute.amazonaws.com:/home/ec2-user/mathbackendservice-0.0.1-SNAPSHOT.jar
 ```
+
+scp -i "TemplateServerSSH.pem" /home/jortiz/myTemp/pasaje/browser/* ec2-user@ec2-3-137-216-8.us-east-2.compute.amazonaws.com:/home/ec2-user/
+
+
 ```
 cd /home/ec2-user/
 java -jar mathbackendservice-0.0.1-SNAPSHOT.jar
 ```
 
 3 Test
+```
 Get   http://ec2-18-191-21-69.us-east-2.compute.amazonaws.com:8081/app/echo
 
 Post  http://ec2-18-191-21-69.us-east-2.compute.amazonaws.com:8081/app/service/findk        {"x": 2,"y": -222,"n": 999}
-
-
-
-To deploy this project run
-
-```bash
-  npm run deploy
 ```
+
+
 
 To deploy this project run
 

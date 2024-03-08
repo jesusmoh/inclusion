@@ -10,7 +10,7 @@ export class MyService {
   constructor(private http: HttpClient) { }
 
   postRequest(numbers: any, ip: string): Observable<any> {
-    const url = 'http://' + ip + '/app/service/findk';
+    const url = 'http://' + ip + ':8081/app/service/findk';
     const headers = new HttpHeaders().set('Content-Type', 'application/json');
     const body = JSON.stringify({
       x: numbers.x,

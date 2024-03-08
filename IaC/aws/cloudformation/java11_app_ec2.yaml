@@ -44,10 +44,10 @@ Resources:
         Fn::Base64: |
           #!/bin/bash
           sudo yum install java-11-amazon-corretto -y
-          sudo yum install httpd -y
-          systemctl start httpd
-          systemctl enable httpd
-          cd /var/www/html
+          sudo yum install python3 -y
+          cd /home/ec2-user
+          echo "<html><body><h1>Hello from Python HTTP Server!</h1></body></html>" > index.html
+          nohup python3 -m http.server 80 &
 
 
   MySecurityGroup:
