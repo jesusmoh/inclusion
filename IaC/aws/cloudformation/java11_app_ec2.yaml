@@ -44,6 +44,10 @@ Resources:
         Fn::Base64: |
           #!/bin/bash
           sudo yum install java-11-amazon-corretto -y
+          sudo yum install httpd -y
+          systemctl start httpd
+          systemctl enable httpd
+          cd /var/www/html
 
 
   MySecurityGroup:

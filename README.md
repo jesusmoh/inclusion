@@ -1,31 +1,54 @@
 
 # Inclusion Proyect
 
-Proyect context and description
+Project context and description
 
-The technical test involves developing a small SpringBoot (Java) functionality, implementing an API with GET and POST services for input and output, in XML or JSON. It requires Java 11, unit tests, and choice of SpringBoot version. Evaluation focuses on development skills, practices, code quality, and documentation. Completion involves emailing the test with instructions, notification, repository upload, documentation, and a development overview with tool usage.
+The technical assessment requires the creation of a compact SpringBoot (Java) feature, which includes crafting an API that supports both GET and POST requests, capable of handling data in either XML or JSON format. The prerequisites for this task are Java 11, the implementation of unit tests, and the freedom to select the version of SpringBoot that best suits your needs. The evaluation will concentrate on your proficiency in development, adherence to best practices, the quality of your code, and the thoroughness of your documentation.
 
-Problem to solve: https://codeforces.com/problemset/problem/1374/A | Deploy it on AWS | Build a Frontend | Perform a complete Readme | Integrating it with Sonar is optional but it adds up | Perform unit tests | Comment the code | Carry out validations of the parameters in the services | Implement an error control system.
+Task Overview:
+
+Problem Statement: Solve the problem outlined at Codeforces [Problem 1374/A.](https://codeforces.com/problemset/problem/1374/A)
+Deployment: Make your solution available online by deploying it on AWS.
+Frontend Development: Create a frontend interface for interacting with your solution.
+Documentation: Prepare a detailed README file that covers the entire scope of the project, including setup, usage, and any other relevant information.
+Sonar Integration: Optionally, you can integrate your project with SonarQube to enhance code quality and maintainability, which will be considered a plus.
+Unit Testing: Write unit tests for your code to ensure reliability and functionality.
+Code Comments: Document your code adequately through comments to improve readability and maintainability.
+Parameter Validation: Implement thorough validation for all parameters in your services to prevent errors and ensure data integrity.
+Error Handling: Develop a robust error control system to manage and respond to exceptions gracefully.
+This project is not just a test of your ability to code but an opportunity to demonstrate your comprehensive understanding of the entire development process, from writing clean, maintainable code to deploying a fully functional application.
 
 ## Solution
 
 APPLICATION ARCHITECTURE and DEPLOYMENT
 
-The final solution adopts a monolithic architecture, offering the capability for server-side operations (EC2) via REST, complemented by a minimalistic API to facilitate data exchange with a lightweight frontend client.
+The developed solution is structured around a monolithic architecture, designed to perform server-side operations on EC2 instances through RESTful services, while also providing a streamlined API for efficient communication with a simplified frontend client. In planning the architecture, several factors were taken into account, including the lack of need(no mandatory) for scalability, advanced security protocols, data persistence, caching mechanisms, budgetary limitations, or specific user interaction patterns.
 
-Key considerations for constructing the environment include the absence of requirements for scalability, specialized security measures, persistence, caching, budget constraints, or unique consumer behaviors.
+The architecture is divided into three main components: Backend, Frontend, and Infrastructure as Code (IaC). Utilizing CloudFormation for IaC, we automate the provisioning of EC2 instances that host both the Java backend and the frontend elements. The decision to bypass AWS Lambda was made to avoid latency issues related to cold starts, which could affect the performance criteria (with a maximum allowable time per test of 1 second). While employing S3 for frontend operations could offer benefits such as HTTPS support, version control, and simplified deployment processes, we opted for a more streamlined approach that prioritizes backend efficiency, aiming for a solution that is both rapid and focused.
 
-Our solution has 3 modules: Backend, Frontend, and Infrastructure as Code (IaC). Through CloudFormation(IaC), we provision EC2 instances to deploy both the Java backend and frontend components. The use of AWS Lambda is avoided due to potential cold start issues impacting the requirement (time limit per test: 1 second). An optimal solution can involve utilizing S3 for client-side operations to leverage HTTPS, source control and deploying, and other features but I prefer to keep a small and quick solution putting focus at the backend.
+
+FOLDERS PROJECT
+.
+├── backend
+├── frontend
+├── IaC
+├── pasaje
+└── README.md
 
 ## Deployment
 
-1 cloud-formation: Replace the current values and execute this:
-aws cloudformation create-stack --stack-name Java11AppStack --template-body file://java11_app_ec2.yaml  --capabilities CAPABILITY_IAM
-2 copy sources and start (Feel free to uses putty,mobaX to other to copy)
-
+1 CREATE INFRASTRUCTURE IN AWS. Please edits the java11_app_ec2.yaml with your account details for AWS.
+```
+aws cloudformation create-stack --stack-name inclusionStack --template-body file://java11_app_ec2.yaml  --capabilities CAPABILITY_IAM
+```
+2 COPY SOURCES. from folder pasaje to /home/ec2-user/ (Feel free to use putty,mobaX or others to copy from your pc to aws server) 
+```
 scp -i "TemplateServerSSH.pem" /home/jortiz/myTemp/pasaje/mathbackendservice-0.0.1-SNAPSHOT.jar ec2-user@ec2-18-191-21-69.us-east-2.compute.amazonaws.com:/home/ec2-user/mathbackendservice-0.0.1-SNAPSHOT.jar
-
+```
+```
+cd /home/ec2-user/
 java -jar mathbackendservice-0.0.1-SNAPSHOT.jar
+```
 
 3 Test
 Get   http://ec2-18-191-21-69.us-east-2.compute.amazonaws.com:8081/app/echo

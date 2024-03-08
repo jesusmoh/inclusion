@@ -1,0 +1,54 @@
+<div class="p-5 bg-primary text-white text-center">
+    <h1>INCLUSION TEST</h1>
+</div>
+<div class="accordion w-25 p-3" id="accordionExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                CASES OK
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <p>7 5 12345 ->OK 12339</p>
+                <p>5 0 4 ->OK 0</p>
+                <p>10 5 15 ->OK 15</p>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                CASES FAIL
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <p>10 5e 15 -> FAIL</p>
+                <p>11 [empty] 67 -> FAIL</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="text-center p-3"><label for="field1">X:</label><br>
+    <input type="number" id="field1" name="x" [(ngModel)]="numbers.x"><br>
+    <label for="field2">Y:</label><br>
+    <input type="number" id="field2" name="y" [(ngModel)]="numbers.y"><br>
+    <label for="field3">N:</label><br>
+    <input type="number" id="field3" name="n" [(ngModel)]="numbers.n"><br>
+    <br>
+    <button id="sendDataBtn" class="btn btn-primary" (click)="sendPostRequest()">Send Data</button>
+    <br><br>
+    <label for="field4">K</label><br><br>
+    <input type="number" id="field4" name="field4" value="{{k}}"><br>
+    <label for="badresult" class="p-2 --bs-danger">{{badresultk}}</label><br>
+    <br>
+
+
+
+
+</div>
+<div class="mt-5 p-4 bg-dark text-white text-center">
