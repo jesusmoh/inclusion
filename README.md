@@ -18,21 +18,7 @@ Parameter Validation: Implement thorough validation for all parameters in your s
 Error Handling: Develop a robust error control system to manage and respond to exceptions gracefully.
 This project is not just a test of your ability to code but an opportunity to demonstrate your comprehensive understanding of the entire development process, from writing clean, maintainable code to deploying a fully functional application.
 
-## Deployment
 
-1  Please feel free to edit the IaC_inclusion_001.yaml with your AWS account config. Execute this code in cd /IaC/aws/cloudformation
-
-```
-aws cloudformation create-stack --stack-name inclusionStack --template-body file://IaC_inclusion_001.yaml  --capabilities CAPABILITY_IAM
-```
- Test
-```
-WebBrowser  http://xxxxxxxxxxxxx.compute.amazonaws.com/
-
-Get   http://xxxxxxxxxxx.compute.amazonaws.com:8081/app/echo
-
-Post  http://xxxxxxxxxxxxxxxxx.compute.amazonaws.com:8081/app/service/findk   Body {"x": 2,"y": -222,"n": 999}
-```
 
 ## Solution
 
@@ -49,6 +35,22 @@ FOLDERS PROJECT
 ├── IaC
 ├── pasaje
 └── README.md
+```
+
+## Deployment
+
+1  Please feel free to edit the IaC_inclusion_001.yaml with your AWS account config. Execute this code in cd /IaC/aws/cloudformation
+
+```
+aws cloudformation create-stack --stack-name inclusionStack --template-body file://IaC_inclusion_001.yaml  --capabilities CAPABILITY_IAM
+```
+ Test
+```
+WebBrowser  http://xxxxxxxxxxxxx.compute.amazonaws.com/
+
+Get   http://xxxxxxxxxxx.compute.amazonaws.com:8081/app/echo
+
+Post  http://xxxxxxxxxxxxxxxxx.compute.amazonaws.com:8081/app/service/findk   Body {"x": 2,"y": -222,"n": 999}
 ```
 ## Authors
 
