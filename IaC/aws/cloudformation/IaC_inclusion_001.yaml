@@ -46,11 +46,9 @@ Resources:
           sudo yum install -y java-11-amazon-corretto python3
           cd /home/ec2-user
           wget https://raw.githubusercontent.com/jesusmoh/inclusion/main/pasaje/app/backend001.jar
-          sudo mkdir www
-          cd /www
           wget https://raw.githubusercontent.com/jesusmoh/inclusion/main/pasaje/app/frontend002.tar.gz
           tar -xzf frontend002.tar.gz
-          nohup python3 -m http.server 80 &
+          cd /browser && nohup python3 -m http.server 80 &
 
   MySecurityGroup:
     Type: AWS::EC2::SecurityGroup
