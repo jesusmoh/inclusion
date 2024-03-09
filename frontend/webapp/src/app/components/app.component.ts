@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, Router } from '@angular/router';
 import { MyService } from '../services/my-service.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { Router } from '@angular/router';
+import { IResult } from '../interfaces/in/IResult';
+
 
 
 @Component({
@@ -15,23 +16,23 @@ import { Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
 
-  title = 'sample text';
   ip: string = "";
   k: any = "";
   numbers = { x: '', y: '', n: '' };
-  badresultk = "";
+  result: IResult = { timestamp: "", status: 200, error: "", message: "", path: "", k: -1 };
 
   constructor(private myService: MyService, private http: HttpClient, private router: Router) { }
 
-
   ngOnInit() {
 
-    console.log(window.location.hostname);
-    this.ip = window.location.hostname;
+    if (typeof window !== 'undefined') {
+      console.log(window.location.hostname);
+      this.ip = window.location.hostname;
+    }
+
   }
 
   public sendPostRequest() {
-    this.badresultk = "";
     this.myService.postRequest(this.numbers, this.ip).subscribe(
       result => {
         console.log(result);
@@ -39,11 +40,13 @@ export class AppComponent implements OnInit {
           this.k = result.k;
 
         } else {
-          this.badresultk = JSON.stringify(result);
+          this.result = result;
+          this.k = "";
         }
       },
       error => {
-        this.badresultk = JSON.stringify(error.error);
+        this.k = "";
+        this.result = error.error;
       }
     );
   }

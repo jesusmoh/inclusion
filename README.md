@@ -28,46 +28,32 @@ The architecture is divided into three main components: Backend, Frontend, and I
 
 
 FOLDERS PROJECT
-.
+```
 ├── backend
 ├── frontend
 ├── IaC
 ├── pasaje
 └── README.md
+```
 
 ## Deployment
 
-1 INFRASTRUCTURE. Please edit the IaC_inclusion_001.yaml with your AWS account. Execute this code in cd /IaC/aws/cloudformation
+1  Please feel free to edit the IaC_inclusion_001.yaml with your AWS account config. Execute this code in cd /IaC/aws/cloudformation
+
 ```
 aws cloudformation create-stack --stack-name inclusionStack --template-body file://IaC_inclusion_001.yaml  --capabilities CAPABILITY_IAM
 ```
-2 COPY SOURCES. from folder pasaje to /home/ec2-user/ (Feel free to use putty,mobaX or others to copy from your pc to aws server). Update all aws dns directions with yours data. 
-```
-scp -i "TemplateServerSSH.pem" /home/jortiz/myTemp/pasaje/mathbackendservice-0.0.1-SNAPSHOT.jar ec2-user@ec2-18-191-21-69.us-east-2.compute.amazonaws.com:/home/ec2-user/mathbackendservice-0.0.1-SNAPSHOT.jar
-```
 
-scp -i "TemplateServerSSH.pem" /home/jortiz/myTemp/pasaje/browser/* ec2-user@ec2-3-137-216-8.us-east-2.compute.amazonaws.com:/home/ec2-user/
-
-
-```
-cd /home/ec2-user/
-java -jar mathbackendservice-0.0.1-SNAPSHOT.jar
-```
 
 3 Test
 ```
+WebBrowser  http://ec2-18-191-21-69.us-east-2.compute.amazonaws.com/
+
 Get   http://ec2-18-191-21-69.us-east-2.compute.amazonaws.com:8081/app/echo
 
-Post  http://ec2-18-191-21-69.us-east-2.compute.amazonaws.com:8081/app/service/findk        {"x": 2,"y": -222,"n": 999}
+Post  http://ec2-18-191-21-69.us-east-2.compute.amazonaws.com:8081/app/service/findk   Body {"x": 2,"y": -222,"n": 999}
 ```
 
-
-
-To deploy this project run
-
-```bash
-  npm run deploy
-```
   
 ## Authors
 

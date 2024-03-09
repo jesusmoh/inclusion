@@ -47,8 +47,13 @@ Resources:
           cd /home/ec2-user
           wget https://raw.githubusercontent.com/jesusmoh/inclusion/main/pasaje/app/backend001.jar
           wget https://raw.githubusercontent.com/jesusmoh/inclusion/main/pasaje/app/frontend002.tar.gz
-          tar -xzf frontend002.tar.gz
-          cd /browser && nohup python3 -m http.server 80 &
+          java -jar backend001.jar &
+          mkdir browser
+          tar -xzf frontend002.tar.gz browser
+          cd browser
+          mv * ..
+          cd .. && nohup python3 -m http.server 80 &
+          
 
   MySecurityGroup:
     Type: AWS::EC2::SecurityGroup
