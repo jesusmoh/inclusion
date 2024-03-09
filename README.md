@@ -37,7 +37,7 @@ FOLDERS PROJECT
 
 ## Deployment
 
-1 INFRASTRUCTURE. Please edit the java11_app_ec2.yaml with your AWS account.
+1 INFRASTRUCTURE. Please edit the IaC_inclusion_001.yaml with your AWS account. Execute this code in cd /IaC/aws/cloudformation
 ```
 aws cloudformation create-stack --stack-name inclusionStack --template-body file://IaC_inclusion_001.yaml  --capabilities CAPABILITY_IAM
 ```

@@ -43,13 +43,13 @@ Resources:
       UserData:
         Fn::Base64: |
           #!/bin/bash
-          sudo yum install java-11-amazon-corretto -y
-          sudo yum install python3 -y
+          sudo yum install -y java-11-amazon-corretto python3
           cd /home/ec2-user
-          wget https://github.com/jesusmoh/inclusion/blob/main/pasaje/app/backend001.jar
+          wget https://raw.githubusercontent.com/jesusmoh/inclusion/main/pasaje/app/backend001.jar
           sudo mkdir www
           cd /www
-          wget https://github.com/jesusmoh/inclusion/blob/main/pasaje/app/frontend001.tar.gz
+          wget https://raw.githubusercontent.com/jesusmoh/inclusion/blob/main/pasaje/app/frontend001.tar.gz
+          tar -xzf frontend001.tar.gz
           nohup python3 -m http.server 80 &
 
   MySecurityGroup:
