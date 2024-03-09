@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
     this.myService.postRequest(this.numbers, this.ip).subscribe(
       result => {
         console.log(result);
-        if (result.k) {
+        if (result && result.k >= 0) {
           this.k = result.k;
 
         } else {
