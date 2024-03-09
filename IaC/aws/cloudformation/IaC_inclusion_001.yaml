@@ -47,8 +47,10 @@ Resources:
           sudo yum install python3 -y
           cd /home/ec2-user
           wget https://github.com/jesusmoh/inclusion/blob/main/pasaje/app/backend001.jar
-          wget -r -np -nH --cut-dirs=1 https://github.com/jesusmoh/inclusion/blob/main/pasaje/app/frontend001/
-          
+          sudo mkdir www
+          cd /www
+          wget https://github.com/jesusmoh/inclusion/blob/main/pasaje/app/frontend001.tar.gz
+          nohup python3 -m http.server 80 &
 
   MySecurityGroup:
     Type: AWS::EC2::SecurityGroup
