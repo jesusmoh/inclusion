@@ -26,8 +26,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
 
-    console.log(window.location.host);
-    this.ip = window.location.host;
+    console.log(window.location.hostname);
+    this.ip = window.location.hostname;
   }
 
   public sendPostRequest() {

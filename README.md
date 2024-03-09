@@ -37,9 +37,9 @@ FOLDERS PROJECT
 
 ## Deployment
 
-1 CREATE INFRASTRUCTURE IN AWS. Please edit the java11_app_ec2.yaml with your account details for AWS.
+1 INFRASTRUCTURE. Please edit the java11_app_ec2.yaml with your AWS account.
 ```
-aws cloudformation create-stack --stack-name inclusionStack --template-body file://java11_app_ec2.yaml  --capabilities CAPABILITY_IAM
+aws cloudformation create-stack --stack-name inclusionStack --template-body file://IaC_inclusion_001.yaml  --capabilities CAPABILITY_IAM
 ```
 2 COPY SOURCES. from folder pasaje to /home/ec2-user/ (Feel free to use putty,mobaX or others to copy from your pc to aws server). Update all aws dns directions with yours data. 
 ```
