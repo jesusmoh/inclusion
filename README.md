@@ -44,7 +44,7 @@ FOLDERS PROJECT
 ```
 aws cloudformation create-stack --stack-name inclusionStack --template-body file://IaC_inclusion_001.yaml  --capabilities CAPABILITY_IAM
 ```
- Test
+ Test: xxxxxxxxxxx value is a DNS value provided by AWS for you. You can check this in EC2/Console/Instances or AWS CLI. Feel free to use your best approach...
 ```
 WebBrowser  http://xxxxxxxxxxxxx.compute.amazonaws.com/
 

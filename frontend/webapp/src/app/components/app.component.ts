@@ -33,6 +33,7 @@ export class AppComponent implements OnInit {
   }
 
   public sendPostRequest() {
+    this.result = { timestamp: "", status: 200, error: "", message: "", path: "", k: -1 };
     this.myService.postRequest(this.numbers, this.ip).subscribe(
       result => {
         console.log(result);
