@@ -437,3 +437,128 @@
 2024-03-09 18:55:16.791  INFO 239283 --- [http-nio-8081-exec-4] core.service.MathServiceImp              : Validating numbers...
 2024-03-09 18:55:16.792  INFO 239283 --- [http-nio-8081-exec-4] core.service.MathServiceImp              : Doing math...
 2024-03-09 18:55:16.792  INFO 239283 --- [http-nio-8081-exec-4] core.service.MathServiceImp              : For test case [11 67 4]: Maximum k = 59
+2024-03-09 19:05:59.407  INFO 253332 --- [restartedMain] core.App                                 : Starting App using Java 11.0.22 on lenovopc with PID 253332 (/home/jortiz/IT/code/javacode/github/inclusion/backend/target/classes started by jortiz in /home/jortiz/IT/code/javacode/github/inclusion/backend)
+2024-03-09 19:05:59.409  INFO 253332 --- [restartedMain] core.App                                 : The following 1 profile is active: "dev"
+2024-03-09 19:05:59.444  INFO 253332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-09 19:05:59.444  INFO 253332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-09 19:06:00.301  INFO 253332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-03-09 19:06:00.307  INFO 253332 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-09 19:06:00.307  INFO 253332 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-09 19:06:00.339  INFO 253332 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-09 19:06:00.339  INFO 253332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 894 ms
+2024-03-09 19:06:00.908  WARN 253332 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-03-09 19:06:00.933  INFO 253332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-09 19:06:00.938  INFO 253332 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-03-09 19:06:00.971  INFO 253332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-03-09 19:06:00.986  INFO 253332 --- [restartedMain] core.App                                 : Started App in 1.812 seconds (JVM running for 2.157)
+2024-03-09 19:06:02.623  INFO 253332 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-09 19:06:02.624  INFO 253332 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-09 19:06:02.625  INFO 253332 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-09 19:07:49.526  INFO 253332 --- [http-nio-8081-exec-2] core.controller.rest.MathController      : Arriving numbers...
+2024-03-09 19:07:49.526  INFO 253332 --- [http-nio-8081-exec-2] core.service.MathServiceImp              : Validating numbers...
+2024-03-09 19:07:49.526 ERROR 253332 --- [http-nio-8081-exec-2] core.service.MathServiceImp              : An ERROR Message
+2024-03-09 19:07:49.527  WARN 253332 --- [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [core.exception.AppException: there are some nulls or undefine values/fields for integers]
+2024-03-09 19:42:20.496  INFO 253332 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 14 class path changes (0 additions, 14 deletions, 0 modifications)
+2024-03-09 19:42:20.505  INFO 253332 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-03-09 19:42:20.506  INFO 253332 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-09 19:43:11.804  INFO 253332 --- [restartedMain] core.App                                 : Starting App using Java 11.0.22 on lenovopc with PID 253332 (/home/jortiz/IT/code/javacode/github/inclusion/backend/target/classes started by jortiz in /home/jortiz/IT/code/javacode/github/inclusion/backend)
+2024-03-09 19:43:11.804  INFO 253332 --- [restartedMain] core.App                                 : The following 1 profile is active: "dev"
+2024-03-09 19:43:12.083  INFO 253332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-03-09 19:43:12.084  INFO 253332 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-09 19:43:12.084  INFO 253332 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-09 19:43:12.090  INFO 253332 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-09 19:43:12.090  INFO 253332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 284 ms
+2024-03-09 19:43:12.248  INFO 292762 --- [main] core.controller.EchoTest                 : Starting EchoTest using Java 21.0.2 on lenovopc with PID 292762 (started by jortiz in /home/jortiz/IT/code/javacode/github/inclusion/backend)
+2024-03-09 19:43:12.250  INFO 292762 --- [main] core.controller.EchoTest                 : The following 1 profile is active: "dev"
+2024-03-09 19:43:12.279  WARN 253332 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-03-09 19:43:12.285  INFO 253332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-09 19:43:12.289  INFO 253332 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-03-09 19:43:12.314  INFO 253332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-03-09 19:43:12.320  INFO 253332 --- [restartedMain] core.App                                 : Started App in 0.53 seconds (JVM running for 2233.491)
+2024-03-09 19:43:12.323  INFO 253332 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   CachesEndpointAutoConfiguration#cachesEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) found bean 'cachesEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) found bean 'configurationPropertiesReportEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   EnvironmentEndpointAutoConfiguration#environmentEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) found bean 'environmentEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   LogFileWebEndpointAutoConfiguration#logFileWebEndpoint matched:
+      - Log File found logging.file.path ./logfile (LogFileWebEndpointAutoConfiguration.LogFileCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LogFileWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ShutdownEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.jmx.exposure' property (OnAvailableEndpointCondition)
+
+   ShutdownEndpointAutoConfiguration#shutdownEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.ShutdownEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (server.error.whitelabel.enabled) found different value in property 'enabled' (OnPropertyCondition)
+
+   ThymeleafAutoConfiguration.ThymeleafWebMvcConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.thymeleaf.enabled) found different value in property 'spring.thymeleaf.enabled' (OnPropertyCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-03-09 19:43:13.134  INFO 292762 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2024-03-09 19:43:13.140  INFO 292762 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-09 19:43:13.140  INFO 292762 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-09 19:43:13.205  INFO 292762 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-09 19:43:13.206  INFO 292762 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 927 ms
+2024-03-09 19:43:13.716  WARN 292762 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-03-09 19:43:13.734  INFO 292762 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-03-09 19:43:13.787  INFO 292762 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 43039 (http) with context path ''
+2024-03-09 19:43:13.796  INFO 292762 --- [main] core.controller.EchoTest                 : Started EchoTest in 1.788 seconds (JVM running for 2.391)
+2024-03-09 19:43:14.029  INFO 292762 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-09 19:43:14.029  INFO 292762 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-09 19:43:14.030  INFO 292762 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-09 19:43:14.118  INFO 292762 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [core.service.MathServiceImpTest], using SpringBootContextLoader
+2024-03-09 19:43:14.118  INFO 292762 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [core.service.MathServiceImpTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-03-09 19:43:14.119  INFO 292762 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [core.service.MathServiceImpTest]: MathServiceImpTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-09 19:43:14.123  INFO 292762 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration core.App for test class core.service.MathServiceImpTest
+2024-03-09 19:43:14.124  INFO 292762 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-03-09 19:43:14.125  INFO 292762 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@58aa5c94, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5d27b4c1, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@50df37eb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4b508371, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@41143873, org.springframework.test.context.support.DirtiesContextTestExecutionListener@21f50d2c, org.springframework.test.context.event.EventPublishingTestExecutionListener@8bc0696, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@473847fb, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@270f28cf, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2e1add6f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@467af68c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@43786627, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1d6f77d7]
+2024-03-09 19:43:14.151  INFO 292762 --- [main] core.service.MathServiceImpTest          : Starting MathServiceImpTest using Java 21.0.2 on lenovopc with PID 292762 (started by jortiz in /home/jortiz/IT/code/javacode/github/inclusion/backend)
+2024-03-09 19:43:14.152  INFO 292762 --- [main] core.service.MathServiceImpTest          : The following 1 profile is active: "dev"
+2024-03-09 19:43:14.604  WARN 292762 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-03-09 19:43:14.613  INFO 292762 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-03-09 19:43:14.629  INFO 292762 --- [main] core.service.MathServiceImpTest          : Started MathServiceImpTest in 0.499 seconds (JVM running for 3.224)
+2024-03-09 19:43:14.650  INFO 292762 --- [main] core.service.MathServiceImp              : Validating numbers...
+2024-03-09 19:43:14.651  INFO 292762 --- [main] core.service.MathServiceImp              : Doing math...
+2024-03-09 19:43:14.658  INFO 292762 --- [main] core.service.MathServiceImp              : For test case [2 99 -222]: Maximum k = 98
