@@ -4,7 +4,6 @@ package core.service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import core.exception.AppException;
@@ -23,7 +22,6 @@ public class MathServiceImp implements IMathService {
     Logger logger = LoggerFactory.getLogger(MathServiceImp.class);
 
     @Autowired
-    @Qualifier("requestKDTOValidatorServiceImp")
     private IRequestKDTOValidatorService requestKDTOValidatorServiceImp;
 
     @Override
@@ -41,7 +39,7 @@ public class MathServiceImp implements IMathService {
             logger.info("For test case [" + x + " " + n + " " + y + "]: Maximum k = " + k);
             return new ResultKDTO(k);
         } else {
-            logger.error("An ERROR Message");
+            logger.error("A new ERROR Message " + rv.getResult());
             throw new AppException(rv.getResult(), true);
 
         }

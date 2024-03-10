@@ -1,0 +1,172 @@
+2024-03-09 22:22:54.579  INFO 467047 --- [restartedMain] core.App                                 : Starting App using Java 11.0.22 on lenovopc with PID 467047 (/home/jortiz/IT/code/javacode/github/inclusion/backend/target/classes started by jortiz in /home/jortiz/IT/code/javacode/github/inclusion)
+2024-03-09 22:22:54.580  INFO 467047 --- [restartedMain] core.App                                 : The following 1 profile is active: "dev"
+2024-03-09 22:22:54.623  INFO 467047 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-09 22:22:54.624  INFO 467047 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-09 22:22:55.571  INFO 467047 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-03-09 22:22:55.580  INFO 467047 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-09 22:22:55.581  INFO 467047 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-09 22:22:55.633  INFO 467047 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-09 22:22:55.634  INFO 467047 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1010 ms
+2024-03-09 22:22:56.232  WARN 467047 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-03-09 22:22:56.258  INFO 467047 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-09 22:22:56.264  INFO 467047 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-03-09 22:22:56.302  INFO 467047 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-03-09 22:22:56.319  INFO 467047 --- [restartedMain] core.App                                 : Started App in 1.985 seconds (JVM running for 2.488)
+2024-03-09 22:22:57.720  INFO 467047 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-09 22:22:57.720  INFO 467047 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-09 22:22:57.722  INFO 467047 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-09 22:23:03.071  INFO 467047 --- [http-nio-8081-exec-3] core.controller.rest.MathController      : Arriving numbers...
+2024-03-09 22:23:03.071  INFO 467047 --- [http-nio-8081-exec-3] core.service.MathServiceImp              : Validating numbers...
+2024-03-09 22:23:09.497 ERROR 467047 --- [http-nio-8081-exec-3] core.service.MathServiceImp              : A new ERROR Message There are some nulls or undefine objects in the operation. Please send natural numbers >=0.
+2024-03-09 22:23:09.500  WARN 467047 --- [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [core.exception.AppException: There are some nulls or undefine objects in the operation. Please send natural numbers >=0.]
+2024-03-09 22:23:14.763  INFO 467047 --- [http-nio-8081-exec-2] core.controller.rest.MathController      : Arriving numbers...
+2024-03-09 22:23:14.763  INFO 467047 --- [http-nio-8081-exec-2] core.service.MathServiceImp              : Validating numbers...
+2024-03-09 22:23:28.215 ERROR 467047 --- [http-nio-8081-exec-2] core.service.MathServiceImp              : A new ERROR Message There are some nulls or undefine objects in the operation. Please send natural numbers >=0.
+2024-03-09 22:23:28.217  WARN 467047 --- [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [core.exception.AppException: There are some nulls or undefine objects in the operation. Please send natural numbers >=0.]
+2024-03-09 22:24:42.798  INFO 467047 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-09 22:24:42.805  INFO 467047 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-03-09 22:24:42.808  INFO 467047 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-09 22:24:42.905  INFO 467047 --- [restartedMain] core.App                                 : Starting App using Java 11.0.22 on lenovopc with PID 467047 (/home/jortiz/IT/code/javacode/github/inclusion/backend/target/classes started by jortiz in /home/jortiz/IT/code/javacode/github/inclusion)
+2024-03-09 22:24:42.906  INFO 467047 --- [restartedMain] core.App                                 : The following 1 profile is active: "dev"
+2024-03-09 22:24:43.244  INFO 467047 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-03-09 22:24:43.245  INFO 467047 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-09 22:24:43.245  INFO 467047 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-09 22:24:43.252  INFO 467047 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-09 22:24:43.252  INFO 467047 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 341 ms
+2024-03-09 22:24:43.386  WARN 467047 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-03-09 22:24:43.389  INFO 467047 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-09 22:24:43.390  INFO 467047 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-03-09 22:24:43.400  INFO 467047 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-03-09 22:24:43.404  INFO 467047 --- [restartedMain] core.App                                 : Started App in 0.532 seconds (JVM running for 109.573)
+2024-03-09 22:24:43.407  INFO 467047 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-09 22:24:45.421  INFO 467047 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-09 22:24:45.422  INFO 467047 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-09 22:24:45.422  INFO 467047 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-03-09 22:24:45.424  INFO 467047 --- [http-nio-8081-exec-1] core.controller.rest.MathController      : Arriving numbers...
+2024-03-09 22:24:45.424  INFO 467047 --- [http-nio-8081-exec-1] core.service.MathServiceImp              : Validating numbers...
+2024-03-09 22:24:48.995 ERROR 467047 --- [http-nio-8081-exec-1] core.service.MathServiceImp              : A new ERROR Message There are some nulls or undefine objects in the operation. Please send natural numbers >=0.
+2024-03-09 22:24:48.997  WARN 467047 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [core.exception.AppException: There are some nulls or undefine objects in the operation. Please send natural numbers >=0.]
+2024-03-09 22:55:37.766  INFO 495812 --- [restartedMain] core.App                                 : Starting App using Java 11.0.22 on lenovopc with PID 495812 (/home/jortiz/IT/code/javacode/github/inclusion/backend/target/classes started by jortiz in /home/jortiz/IT/code/javacode/github/inclusion)
+2024-03-09 22:55:37.767  INFO 495812 --- [restartedMain] core.App                                 : The following 1 profile is active: "dev"
+2024-03-09 22:55:37.822  INFO 495812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-09 22:55:37.822  INFO 495812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-09 22:55:38.702  INFO 495812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-03-09 22:55:38.708  INFO 495812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-09 22:55:38.709  INFO 495812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-09 22:55:38.744  INFO 495812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-09 22:55:38.744  INFO 495812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 921 ms
+2024-03-09 22:55:39.331  WARN 495812 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-03-09 22:55:39.361  INFO 495812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-09 22:55:39.367  INFO 495812 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-03-09 22:55:39.413  INFO 495812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-03-09 22:55:39.428  INFO 495812 --- [restartedMain] core.App                                 : Started App in 1.905 seconds (JVM running for 2.171)
+2024-03-09 22:55:41.338  INFO 495812 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-09 22:55:41.338  INFO 495812 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-09 22:55:41.339  INFO 495812 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-03-09 22:55:42.004  INFO 495812 --- [http-nio-8081-exec-2] core.controller.rest.MathController      : Arriving numbers...
+2024-03-09 22:55:42.005  INFO 495812 --- [http-nio-8081-exec-2] core.service.MathServiceImp              : Validating numbers...
+2024-03-09 22:55:42.005 ERROR 495812 --- [http-nio-8081-exec-2] core.service.MathServiceImp              : A new ERROR Message There are some nulls or undefine objects in the operation. Please send natural numbers >=0.
+2024-03-09 22:55:42.006  WARN 495812 --- [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [core.exception.AppException: There are some nulls or undefine objects in the operation. Please send natural numbers >=0.]
+2024-03-09 22:57:22.897  INFO 495812 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-09 22:57:22.904  INFO 495812 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-03-09 22:57:22.905  INFO 495812 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-09 22:57:22.988  INFO 495812 --- [restartedMain] core.App                                 : Starting App using Java 11.0.22 on lenovopc with PID 495812 (/home/jortiz/IT/code/javacode/github/inclusion/backend/target/classes started by jortiz in /home/jortiz/IT/code/javacode/github/inclusion)
+2024-03-09 22:57:22.988  INFO 495812 --- [restartedMain] core.App                                 : The following 1 profile is active: "dev"
+2024-03-09 22:57:23.145  INFO 495812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-03-09 22:57:23.145  INFO 495812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-09 22:57:23.145  INFO 495812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-09 22:57:23.149  INFO 495812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-09 22:57:23.149  INFO 495812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 159 ms
+2024-03-09 22:57:23.276  WARN 495812 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-03-09 22:57:23.281  INFO 495812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-09 22:57:23.285  INFO 495812 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-03-09 22:57:23.301  INFO 495812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-03-09 22:57:23.306  INFO 495812 --- [restartedMain] core.App                                 : Started App in 0.344 seconds (JVM running for 106.049)
+2024-03-09 22:57:23.308  INFO 495812 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-09 22:58:10.767  INFO 495812 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-09 22:58:10.772  INFO 495812 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-03-09 22:58:10.830  INFO 495812 --- [restartedMain] core.App                                 : Starting App using Java 11.0.22 on lenovopc with PID 495812 (/home/jortiz/IT/code/javacode/github/inclusion/backend/target/classes started by jortiz in /home/jortiz/IT/code/javacode/github/inclusion)
+2024-03-09 22:58:10.831  INFO 495812 --- [restartedMain] core.App                                 : The following 1 profile is active: "dev"
+2024-03-09 22:58:11.043  INFO 495812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-03-09 22:58:11.044  INFO 495812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-09 22:58:11.044  INFO 495812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-09 22:58:11.053  INFO 495812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-09 22:58:11.053  INFO 495812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 220 ms
+2024-03-09 22:58:11.172  WARN 495812 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-03-09 22:58:11.178  INFO 495812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-09 22:58:11.181  INFO 495812 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-03-09 22:58:11.191  INFO 495812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-03-09 22:58:11.194  INFO 495812 --- [restartedMain] core.App                                 : Started App in 0.378 seconds (JVM running for 153.937)
+2024-03-09 22:58:11.196  INFO 495812 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-09 22:58:15.082  INFO 495812 --- [http-nio-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-09 22:58:15.082  INFO 495812 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-09 22:58:15.083  INFO 495812 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-09 22:58:15.085  INFO 495812 --- [http-nio-8081-exec-3] core.controller.rest.MathController      : Arriving numbers...
+2024-03-09 22:58:15.085  INFO 495812 --- [http-nio-8081-exec-3] core.service.MathServiceImp              : Validating numbers...
+2024-03-09 22:58:15.085 ERROR 495812 --- [http-nio-8081-exec-3] core.service.MathServiceImp              : A new ERROR Message There are some nulls or undefine objects in the operation. Please send natural numbers >=0.
+2024-03-09 22:58:15.085  WARN 495812 --- [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [core.exception.AppException: There are some nulls or undefine objects in the operation. Please send natural numbers >=0.]
+2024-03-09 22:58:15.995  INFO 495812 --- [http-nio-8081-exec-2] core.controller.rest.MathController      : Arriving numbers...
+2024-03-09 22:58:15.995  INFO 495812 --- [http-nio-8081-exec-2] core.service.MathServiceImp              : Validating numbers...
+2024-03-09 22:58:15.995 ERROR 495812 --- [http-nio-8081-exec-2] core.service.MathServiceImp              : A new ERROR Message There are some nulls or undefine objects in the operation. Please send natural numbers >=0.
+2024-03-09 22:58:15.995  WARN 495812 --- [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [core.exception.AppException: There are some nulls or undefine objects in the operation. Please send natural numbers >=0.]
+2024-03-09 22:58:16.746  INFO 495812 --- [http-nio-8081-exec-5] core.controller.rest.MathController      : Arriving numbers...
+2024-03-09 22:58:16.747  INFO 495812 --- [http-nio-8081-exec-5] core.service.MathServiceImp              : Validating numbers...
+2024-03-09 22:58:16.747 ERROR 495812 --- [http-nio-8081-exec-5] core.service.MathServiceImp              : A new ERROR Message There are some nulls or undefine objects in the operation. Please send natural numbers >=0.
+2024-03-09 22:58:16.747  WARN 495812 --- [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [core.exception.AppException: There are some nulls or undefine objects in the operation. Please send natural numbers >=0.]
+2024-03-09 22:58:17.455  INFO 495812 --- [http-nio-8081-exec-4] core.controller.rest.MathController      : Arriving numbers...
+2024-03-09 22:58:17.455  INFO 495812 --- [http-nio-8081-exec-4] core.service.MathServiceImp              : Validating numbers...
+2024-03-09 22:58:17.455 ERROR 495812 --- [http-nio-8081-exec-4] core.service.MathServiceImp              : A new ERROR Message There are some nulls or undefine objects in the operation. Please send natural numbers >=0.
+2024-03-09 22:58:17.455  WARN 495812 --- [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [core.exception.AppException: There are some nulls or undefine objects in the operation. Please send natural numbers >=0.]
+2024-03-09 23:14:53.855  INFO 517540 --- [restartedMain] core.App                                 : Starting App using Java 11.0.22 on lenovopc with PID 517540 (/home/jortiz/IT/code/javacode/github/inclusion/backend/target/classes started by jortiz in /home/jortiz/IT/code/javacode/github/inclusion)
+2024-03-09 23:14:53.856  INFO 517540 --- [restartedMain] core.App                                 : The following 1 profile is active: "dev"
+2024-03-09 23:14:53.889  INFO 517540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-09 23:14:53.890  INFO 517540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-09 23:14:54.886  INFO 517540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-03-09 23:14:54.893  INFO 517540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-09 23:14:54.893  INFO 517540 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-09 23:14:54.924  INFO 517540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-09 23:14:54.924  INFO 517540 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1034 ms
+2024-03-09 23:14:55.345  WARN 517540 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-03-09 23:14:55.377  INFO 517540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-09 23:14:55.383  INFO 517540 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-03-09 23:14:55.416  WARN 517540 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8081 is already in use
+2024-03-09 23:14:55.422  INFO 517540 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-03-09 23:14:55.438  INFO 517540 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-03-09 23:14:55.454 ERROR 517540 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2024-03-09 23:15:06.491  INFO 517861 --- [restartedMain] core.App                                 : Starting App using Java 11.0.22 on lenovopc with PID 517861 (/home/jortiz/IT/code/javacode/github/inclusion/backend/target/classes started by jortiz in /home/jortiz/IT/code/javacode/github/inclusion)
+2024-03-09 23:15:06.492  INFO 517861 --- [restartedMain] core.App                                 : The following 1 profile is active: "dev"
+2024-03-09 23:15:06.522  INFO 517861 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-09 23:15:06.522  INFO 517861 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-09 23:15:07.456  INFO 517861 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-03-09 23:15:07.463  INFO 517861 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-09 23:15:07.463  INFO 517861 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-09 23:15:07.496  INFO 517861 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-09 23:15:07.496  INFO 517861 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 973 ms
+2024-03-09 23:15:07.986  WARN 517861 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-03-09 23:15:08.019  INFO 517861 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-09 23:15:08.026  INFO 517861 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-03-09 23:15:08.087  INFO 517861 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-03-09 23:15:08.103  INFO 517861 --- [restartedMain] core.App                                 : Started App in 1.844 seconds (JVM running for 2.085)
+2024-03-09 23:15:09.942  INFO 517861 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-09 23:15:09.943  INFO 517861 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-09 23:15:09.944  INFO 517861 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-09 23:15:12.572  INFO 517861 --- [http-nio-8081-exec-1] core.controller.rest.MathController      : Arriving numbers...
+2024-03-09 23:15:12.572  INFO 517861 --- [http-nio-8081-exec-1] core.service.MathServiceImp              : Validating numbers...
+2024-03-09 23:15:12.572 ERROR 517861 --- [http-nio-8081-exec-1] core.service.MathServiceImp              : A new ERROR Message There are some nulls or undefine objects in the operation. Please send natural numbers >=0.
+2024-03-09 23:15:12.579  INFO 517861 --- [http-nio-8081-exec-1] c.e.AppGlobalExceptionHandlerController  : f7f8dd91-74d1-4e3d-bfba-91cd256607f0 Unexpected error occurred on request: org.apache.catalina.connector.ResponseFacade@47907fcdcore.exception.AppException: There are some nulls or undefine objects in the operation. Please send natural numbers >=0.
+2024-03-09 23:15:12.580  WARN 517861 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [core.exception.AppException: There are some nulls or undefine objects in the operation. Please send natural numbers >=0.]
